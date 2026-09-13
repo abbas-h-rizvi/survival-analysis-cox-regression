@@ -18,6 +18,20 @@ The analysis uses Kaplan-Meier estimation, log-rank testing and Cox proportional
 
 ## Key Findings
 
+## Selected Visualisations
+
+### Kaplan-Meier Survival Curves by Gender
+
+Kaplan-Meier estimates were used to compare survival experience between males and females, with confidence intervals and a number-at-risk table included to show uncertainty and the number of observations remaining under follow-up.
+
+![Kaplan-Meier Survival Curves by Gender](figures/kaplan_meier_by_gender.png)
+
+### Cox-Adjusted Survival by Age
+
+Adjusted survival curves from the Cox proportional hazards model illustrate the effect of age while holding BMI at its sample mean. Predicted survival decreases as age at admission increases.
+
+![Cox-Adjusted Survival by Age](figures/cox_adjusted_survival_by_age.png)
+
 - Age was statistically significant in the fitted Cox model.
 - The estimated age hazard ratio was **1.047**, corresponding to an estimated **4.7% increase in hazard per additional year of age**, holding BMI fixed.
 - BMI was not statistically significant after controlling for age.
